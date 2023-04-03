@@ -1,0 +1,715 @@
+provider,instance_type,paas,vps,dedicated_cpu,cpu,ram,price_per_month
+Fly,Apps,1,0,0,1,256,194
+Fly,Apps,1,0,0,1,512,319
+Fly,Apps,1,0,0,1,1000,570
+Fly,Apps,1,0,0,1,2000,1070
+Fly,Apps,1,0,1,1,2000,3100
+Fly,Apps,1,0,1,1,4000,4101
+Fly,Apps,1,0,1,1,8000,6102
+Fly,Apps,1,0,1,2,4000,6200
+Fly,Apps,1,0,1,2,8000,9202
+Fly,Apps,1,0,1,2,16000,13204
+Fly,Apps,1,0,1,4,8000,12400
+Fly,Apps,1,0,1,4,16000,19404
+Fly,Apps,1,0,1,4,32000,27408
+Fly,Apps,1,0,1,4,64000,55816
+Fly,Machines,1,0,0,1,256,194
+Fly,Machines,1,0,0,1,512,319
+Fly,Machines,1,0,0,1,1000,570
+Fly,Machines,1,0,0,1,2000,1070
+Fly,Machines,1,0,0,2,512,389
+Fly,Machines,1,0,0,2,1000,764
+Fly,Machines,1,0,0,2,2000,1264
+Fly,Machines,1,0,0,2,4000,2265
+Fly,Machines,1,0,0,4,1000,778
+Fly,Machines,1,0,0,4,2000,1653
+Fly,Machines,1,0,0,4,4000,2654
+Fly,Machines,1,0,0,4,8000,4655
+Fly,Machines,1,0,0,8,2000,1555
+Fly,Machines,1,0,0,8,4000,3431
+Fly,Machines,1,0,0,8,8000,5432
+Fly,Machines,1,0,0,8,16000,9434
+Fly,Machines,1,0,1,1,2000,3100
+Fly,Machines,1,0,1,1,4000,4101
+Fly,Machines,1,0,1,1,8000,6102
+Fly,Machines,1,0,1,2,4000,6200
+Fly,Machines,1,0,1,2,8000,9202
+Fly,Machines,1,0,1,2,16000,13204
+Fly,Machines,1,0,1,4,8000,12400
+Fly,Machines,1,0,1,4,16000,19404
+Fly,Machines,1,0,1,4,32000,27408
+Fly,Machines,1,0,1,8,16000,24800
+Fly,Machines,1,0,1,8,32000,39808
+Fly,Machines,1,0,1,8,64000,55816
+Fly,Machines,1,0,1,16,32000,49601
+Fly,Machines,1,0,1,16,64000,80616
+Fly,Machines,1,0,1,16,128000,112633
+Render,Free,1,0,0,0.1,512,0
+Render,Starter,1,0,0,0.5,512,700
+Render,Standard,1,0,0,1,2000,2500
+Render,Pro,1,0,0,2,4000,8500
+Render,Pro Plus,1,0,0,4,8000,17500
+Render,Pro Max,1,0,0,4,16000,22500
+Render,Pro Ultra,1,0,0,8,32000,45000
+Heroku,Standard-1x,1,0,0,,512,700
+Heroku,Standard-2x,1,0,0,,1024,700
+Heroku,Performance-m,1,0,1,,2560,700
+Heroku,Performance-l,1,0,1,,16384,700
+Vultr,Regular,0,1,0,1,512,250
+Vultr,Regular,0,1,0,1,512,250
+Vultr,Regular,0,1,0,1,1000,500
+Vultr,Regular,0,1,0,1,2000,1000
+Vultr,Regular,0,1,0,2,4000,2000
+Vultr,Regular,0,1,0,4,8000,4000
+Vultr,Regular,0,1,0,6,16000,8000
+Vultr,Regular,0,1,0,8,32000,16000
+Vultr,Regular,0,1,0,16,64000,32000
+Vultr,Regular,0,1,0,24,96000,64000
+Vultr,High Perf - AMD,0,1,0,1,1000,600
+Vultr,High Perf - AMD,0,1,0,1,2000,1200
+Vultr,High Perf - AMD,0,1,0,2,2000,1800
+Vultr,High Perf - AMD,0,1,0,2,4000,2400
+Vultr,High Perf - AMD,0,1,0,4,8000,4800
+Vultr,High Perf - AMD,0,1,0,4,12000,7200
+Vultr,High Perf - AMD,0,1,0,8,16000,9600
+Vultr,High Perf - AMD,0,1,0,12,24000,14400
+Vultr,High Perf - Intel,0,1,0,1,1000,600
+Vultr,High Perf - Intel,0,1,0,1,2000,1200
+Vultr,High Perf - Intel,0,1,0,2,2000,1800
+Vultr,High Perf - Intel,0,1,0,2,4000,2400
+Vultr,High Perf - Intel,0,1,0,4,8000,4800
+Vultr,High Perf - Intel,0,1,0,4,12000,7200
+Vultr,High Perf - Intel,0,1,0,8,16000,9600
+Vultr,High Perf - Intel,0,1,0,12,24000,14400
+Vultr,Cloud Compute - General Purpose,0,1,1,1,4000,3000
+Vultr,Cloud Compute - General Purpose,0,1,1,2,8000,6000
+Vultr,Cloud Compute - General Purpose,0,1,1,4,16000,12000
+Vultr,Cloud Compute - General Purpose,0,1,1,8,32000,24000
+Vultr,Cloud Compute - General Purpose,0,1,1,16,64000,48000
+Vultr,Cloud Compute - General Purpose,0,1,1,24,96000,72000
+Vultr,Cloud Compute - General Purpose,0,1,1,32,128000,96000
+Vultr,Cloud Compute - General Purpose,0,1,1,40,160000,120000
+Vultr,Cloud Compute - General Purpose,0,1,1,64,192000,192000
+Vultr,Cloud Compute - General Purpose,0,1,1,96,255000,384000
+Vultr,Cloud Compute - CPU Optimized,0,1,1,1,2000,2800
+Vultr,Cloud Compute - CPU Optimized,0,1,1,2,4000,4000
+Vultr,Cloud Compute - CPU Optimized,0,1,1,4,8000,8000
+Vultr,Cloud Compute - CPU Optimized,0,1,1,8,16000,16000
+Vultr,Cloud Compute - CPU Optimized,0,1,1,16,32000,32000
+Vultr,Cloud Compute - CPU Optimized,0,1,1,32,64000,64000
+Vultr,Cloud Compute - Memory Optimized,0,1,1,1,8000,4000
+Vultr,Cloud Compute - Memory Optimized,0,1,1,2,16000,8000
+Vultr,Cloud Compute - Memory Optimized,0,1,1,4,32000,16000
+Vultr,Cloud Compute - Memory Optimized,0,1,1,8,64000,32000
+Vultr,Cloud Compute - Memory Optimized,0,1,1,16,128000,64000
+Vultr,Cloud Compute - Memory Optimized,0,1,1,24,192000,96000
+Vultr,Cloud Compute - Memory Optimized,0,1,1,32,256000,128000
+Linode,Dudicated CPU,0,1,1,2,4000,3600
+Linode,Dudicated CPU,0,1,1,4,8000,7200
+Linode,Dudicated CPU,0,1,1,8,16000,14400
+Linode,Dudicated CPU,0,1,1,16,32000,28800
+Linode,Dudicated CPU,0,1,1,32,64000,57600
+Linode,Dudicated CPU,0,1,1,48,96000,86400
+Linode,Dudicated CPU,0,1,1,50,128000,115200
+Linode,Dudicated CPU,0,1,1,56,256000,230400
+Linode,Dudicated CPU,0,1,1,64,512000,460800
+Linode,Shared CPU,0,1,0,1,1000,500
+Linode,Shared CPU,0,1,0,1,2000,1200
+Linode,Shared CPU,0,1,0,2,4000,2400
+Linode,Shared CPU,0,1,0,4,8000,4800
+Linode,Shared CPU,0,1,0,6,16000,9600
+Linode,Shared CPU,0,1,0,8,32000,19200
+Linode,Shared CPU,0,1,0,16,64000,38400
+Linode,Shared CPU,0,1,0,20,96000,57600
+Linode,Shared CPU,0,1,0,24,128000,76800
+Linode,Shared CPU,0,1,0,32,192000,115200
+Linode,High Memory,0,1,1,2,24000,6000
+Linode,High Memory,0,1,1,2,48000,12000
+Linode,High Memory,0,1,1,4,90000,24000
+Linode,High Memory,0,1,1,8,150000,48000
+Linode,High Memory,0,1,1,16,300000,96000
+Digital Ocean,General Purpose Droplets,0,1,1,2,8000,6300
+Digital Ocean,General Purpose Droplets,0,1,1,4,16000,12600
+Digital Ocean,General Purpose Droplets,0,1,1,8,32000,25200
+Digital Ocean,General Purpose Droplets,0,1,1,16,64000,50400
+Digital Ocean,General Purpose Droplets,0,1,1,32,128000,100800
+Digital Ocean,General Purpose Droplets,0,1,1,40,160000,187500
+Digital Ocean,CPU Optimized Droplets,0,1,1,2,4000,4200
+Digital Ocean,CPU Optimized Droplets,0,1,1,4,8000,8400
+Digital Ocean,CPU Optimized Droplets,0,1,1,8,16000,16800
+Digital Ocean,CPU Optimized Droplets,0,1,1,16,32000,33600
+Digital Ocean,CPU Optimized Droplets,0,1,1,32,64000,67200
+Digital Ocean,CPU Optimized Droplets,0,1,1,48,96000,100800
+Digital Ocean,Memory Optimized Droplets,0,1,1,2,16000,8400
+Digital Ocean,Memory Optimized Droplets,0,1,1,4,32000,16800
+Digital Ocean,Memory Optimized Droplets,0,1,1,8,64000,33600
+Digital Ocean,Memory Optimized Droplets,0,1,1,16,128000,67200
+Digital Ocean,Memory Optimized Droplets,0,1,1,24,192000,100800
+Digital Ocean,Memory Optimized Droplets,0,1,1,32,256000,134400
+AWS (Ohio),t4g.nano,0,1,0,2,500,189.8
+AWS (Ohio),t3a.nano,0,1,0,2,500,211.7
+AWS (Ohio),t3.nano,0,1,0,2,500,240.9
+AWS (Ohio),t2.nano,0,1,0,1,500,262.8
+AWS (Ohio),t4g.micro,0,1,0,2,1000,386.9
+AWS (Ohio),t3a.micro,0,1,0,2,1000,430.7
+AWS (Ohio),t3.micro,0,1,0,2,1000,474.5
+AWS (Ohio),t2.micro,0,1,0,1,1000,525.6
+AWS (Ohio),t4g.small,0,1,0,2,2000,766.5
+AWS (Ohio),t3a.small,0,1,0,2,2000,861.4
+AWS (Ohio),t3.small,0,1,0,2,2000,949
+AWS (Ohio),t2.small,0,1,0,1,2000,1051.2
+AWS (Ohio),a1.medium,0,1,1,1,2000,1175.3
+AWS (Ohio),t4g.medium,0,1,0,2,4000,1540.3
+AWS (Ohio),c6g.medium,0,1,1,1,2000,1562.2
+AWS (Ohio),c7g.medium,0,1,1,1,2000,1744.7
+AWS (Ohio),t3a.medium,0,1,0,2,4000,1722.8
+AWS (Ohio),c6gd.medium,0,1,1,1,2000,1766.6
+AWS (Ohio),m6g.medium,0,1,1,1,4000,1759.3
+AWS (Ohio),m7g.medium,0,1,1,1,4000,1971
+AWS (Ohio),t3.medium,0,1,0,2,4000,1905.3
+AWS (Ohio),c6gn.medium,0,1,1,1,2000,1990.71
+AWS (Ohio),m6gd.medium,0,1,1,1,4000,2080.5
+AWS (Ohio),t2.medium,0,1,0,2,4000,2095.1
+AWS (Ohio),r6g.medium,0,1,1,1,8000,2321.4
+AWS (Ohio),a1.large,0,1,1,2,4000,2343.3
+AWS (Ohio),r7g.medium,0,1,1,1,8000,2584.2
+AWS (Ohio),r6gd.medium,0,1,1,1,8000,2649.9
+AWS (Ohio),t4g.large,0,1,0,2,8000,3073.3
+AWS (Ohio),c6g.large,0,1,1,2,4000,3124.4
+AWS (Ohio),c7g.large,0,1,1,2,4000,3489.4
+AWS (Ohio),t3a.large,0,1,0,2,8000,3438.3
+AWS (Ohio),c6a.large,0,1,1,2,4000,3693.8
+AWS (Ohio),c6gd.large,0,1,1,2,4000,3533.2
+AWS (Ohio),m6g.large,0,1,1,2,8000,3525.9
+AWS (Ohio),c5a.large,0,1,1,2,4000,3577
+AWS (Ohio),m7g.large,0,1,1,2,8000,3942
+AWS (Ohio),t3.large,0,1,0,2,8000,3810.6
+AWS (Ohio),x2gd.medium,0,1,1,1,16000,3759.5
+AWS (Ohio),c5.large,0,1,1,2,4000,3942
+AWS (Ohio),c6i.large,0,1,1,2,4000,4104.79
+AWS (Ohio),m5a.large,0,1,1,2,8000,3942
+AWS (Ohio),c5ad.large,0,1,1,2,4000,3942
+AWS (Ohio),m6a.large,0,1,1,2,8000,4171.95
+AWS (Ohio),c6gn.large,0,1,1,2,4000,3980.69
+AWS (Ohio),m6gd.large,0,1,1,2,8000,4161
+AWS (Ohio),t2.large,0,1,0,2,8000,4197.5
+AWS (Ohio),m5.large,0,1,1,2,8000,4380
+AWS (Ohio),m6i.large,0,1,1,2,8000,4635.5
+AWS (Ohio),c5d.large,0,1,1,2,4000,4380
+AWS (Ohio),m4.large,0,1,1,2,8000,4526
+AWS (Ohio),c4.large,0,1,1,2,3750,4599
+AWS (Ohio),r6g.large,0,1,1,2,16000,4635.5
+AWS (Ohio),c6id.large,0,1,1,2,4000,4637.69
+AWS (Ohio),a1.xlarge,0,1,1,4,8000,4693.9
+AWS (Ohio),m5ad.large,0,1,1,2,8000,4745
+AWS (Ohio),r7g.large,0,1,1,2,16000,5168.4
+AWS (Ohio),c5n.large,0,1,1,2,5250,4964
+AWS (Ohio),r5a.large,0,1,1,2,16000,5183
+AWS (Ohio),m5d.large,0,1,1,2,8000,5183
+AWS (Ohio),r6a.large,0,1,1,2,16000,5475.73
+AWS (Ohio),c6in.large,0,1,1,2,4000,5215.12
+AWS (Ohio),r6gd.large,0,1,1,2,16000,5299.8
+AWS (Ohio),m6id.large,0,1,1,2,8000,5456.75
+AWS (Ohio),m5n.large,0,1,1,2,8000,5475
+AWS (Ohio),r5.large,0,1,1,2,16000,5767
+AWS (Ohio),r6i.large,0,1,1,2,16000,6084.55
+AWS (Ohio),r5ad.large,0,1,1,2,16000,6059
+AWS (Ohio),r4.large,0,1,1,2,15000,6132
+AWS (Ohio),t4g.xlarge,0,1,0,4,16000,6153.9
+AWS (Ohio),c6g.xlarge,0,1,1,4,8000,6256.1
+AWS (Ohio),m5dn.large,0,1,1,2,8000,6278
+AWS (Ohio),m6in.large,0,1,1,2,8000,6402.83
+AWS (Ohio),r5d.large,0,1,1,2,16000,6643
+AWS (Ohio),is4gen.medium,0,1,1,1,6000,7172.98
+AWS (Ohio),c7g.xlarge,0,1,1,4,8000,6978.8
+AWS (Ohio),r5b.large,0,1,1,2,16000,6852.51
+AWS (Ohio),r5n.large,0,1,1,2,16000,6862
+AWS (Ohio),t3a.xlarge,0,1,0,4,16000,6883.9
+AWS (Ohio),r6id.large,0,1,1,2,16000,6937.19
+AWS (Ohio),c6a.xlarge,0,1,1,4,8000,7388.33
+AWS (Ohio),c6gd.xlarge,0,1,1,4,8000,7066.4
+AWS (Ohio),m6g.xlarge,0,1,1,4,16000,7051.8
+AWS (Ohio),c5a.xlarge,0,1,1,4,8000,7081
+AWS (Ohio),i3.large,0,1,1,2,15000,7811
+AWS (Ohio),m6idn.large,0,1,1,2,8000,7318.25
+AWS (Ohio),m7g.xlarge,0,1,1,4,16000,7884
+AWS (Ohio),m5zn.large,0,1,1,2,8000,7599.3
+AWS (Ohio),r3.large,0,1,1,2,15000,7665
+AWS (Ohio),t3.xlarge,0,1,0,4,16000,7613.9
+AWS (Ohio),x2gd.large,0,1,1,2,32000,7511.7
+AWS (Ohio),r5dn.large,0,1,1,2,16000,7665
+AWS (Ohio),c5.xlarge,0,1,1,4,8000,7811
+AWS (Ohio),c6i.xlarge,0,1,1,4,8000,8209.58
+AWS (Ohio),m5a.xlarge,0,1,1,4,16000,7884
+AWS (Ohio),i4i.large,0,1,1,2,16000,8103
+AWS (Ohio),c5ad.xlarge,0,1,1,4,8000,7884
+AWS (Ohio),m6a.xlarge,0,1,1,4,16000,8344.63
+AWS (Ohio),c6gn.xlarge,0,1,1,4,8000,7961.38
+AWS (Ohio),r6in.large,0,1,1,2,16000,8017.59
+AWS (Ohio),m6gd.xlarge,0,1,1,4,16000,8314.7
+AWS (Ohio),im4gn.large,0,1,1,2,8000,8515.45
+AWS (Ohio),t2.xlarge,0,1,0,4,16000,8395
+AWS (Ohio),z1d.large,0,1,1,2,16000,8541
+AWS (Ohio),m5.xlarge,0,1,1,4,16000,8833
+AWS (Ohio),m6i.xlarge,0,1,1,4,16000,9271.73
+AWS (Ohio),c5d.xlarge,0,1,1,4,8000,8833
+AWS (Ohio),r6idn.large,0,1,1,2,16000,8986.3
+AWS (Ohio),c4.xlarge,0,1,1,4,7500,9198
+AWS (Ohio),m4.xlarge,0,1,1,4,16000,9044.7
+AWS (Ohio),r6g.xlarge,0,1,1,4,32000,9271
+AWS (Ohio),c6id.xlarge,0,1,1,4,8000,9274.65
+AWS (Ohio),a1.2xlarge,0,1,1,8,16000,9380.5
+AWS (Ohio),m5ad.xlarge,0,1,1,4,16000,9490
+AWS (Ohio),r7g.xlarge,0,1,1,4,32000,10344.1
+AWS (Ohio),c5n.xlarge,0,1,1,4,10000,9928
+AWS (Ohio),r5a.xlarge,0,1,1,4,32000,10366
+AWS (Ohio),m5d.xlarge,0,1,1,4,16000,10366
+AWS (Ohio),i3en.large,0,1,1,2,16000,11242
+AWS (Ohio),r6a.xlarge,0,1,1,4,32000,10952.19
+AWS (Ohio),c6in.xlarge,0,1,1,4,8000,10430.24
+AWS (Ohio),inf1.xlarge,0,1,1,4,8000,10512
+AWS (Ohio),r6gd.xlarge,0,1,1,4,32000,10599.6
+AWS (Ohio),m6id.xlarge,0,1,1,4,16000,10913.5
+AWS (Ohio),m5n.xlarge,0,1,1,4,16000,10950
+AWS (Ohio),r5.xlarge,0,1,1,4,32000,11607
+AWS (Ohio),r6i.xlarge,0,1,1,4,32000,12169.1
+AWS (Ohio),r5ad.xlarge,0,1,1,4,32000,12045
+AWS (Ohio),r4.xlarge,0,1,1,4,30000,12264
+AWS (Ohio),t4g.2xlarge,0,1,0,8,32000,12307.8
+AWS (Ohio),c6g.2xlarge,0,1,1,8,16000,12512.2
+AWS (Ohio),m5dn.xlarge,0,1,1,4,16000,12483
+AWS (Ohio),m6in.xlarge,0,1,1,4,16000,12806.39
+AWS (Ohio),r5d.xlarge,0,1,1,4,32000,13213
+AWS (Ohio),is4gen.large,0,1,1,2,12000,14346.69
+AWS (Ohio),c7g.2xlarge,0,1,1,8,16000,13957.6
+AWS (Ohio),r5b.xlarge,0,1,1,4,32000,13705.02
+AWS (Ohio),r5n.xlarge,0,1,1,4,32000,13724
+AWS (Ohio),t3a.2xlarge,0,1,0,8,32000,13767.8
+AWS (Ohio),r6id.xlarge,0,1,1,4,32000,13873.65
+AWS (Ohio),c6a.2xlarge,0,1,1,8,16000,14776.66
+AWS (Ohio),c6gd.2xlarge,0,1,1,8,16000,14125.5
+AWS (Ohio),m6g.2xlarge,0,1,1,8,32000,14103.6
+AWS (Ohio),c5a.2xlarge,0,1,1,8,16000,14162
+AWS (Ohio),i3.xlarge,0,1,1,4,30000,15622
+AWS (Ohio),m6idn.xlarge,0,1,1,4,16000,14635.77
+AWS (Ohio),m7g.2xlarge,0,1,1,8,32000,15760.7
+AWS (Ohio),m5zn.xlarge,0,1,1,4,16000,15191.3
+AWS (Ohio),t3.2xlarge,0,1,0,8,32000,15227.8
+AWS (Ohio),r3.xlarge,0,1,1,4,30000,15257
+AWS (Ohio),x2gd.xlarge,0,1,1,4,64000,15023.4
+AWS (Ohio),r5dn.xlarge,0,1,1,4,32000,15330
+AWS (Ohio),c5.2xlarge,0,1,1,8,16000,15622
+AWS (Ohio),c6i.2xlarge,0,1,1,8,16000,16418.43
+AWS (Ohio),i4i.xlarge,0,1,1,4,32000,16279
+AWS (Ohio),m5a.2xlarge,0,1,1,8,32000,15841
+AWS (Ohio),c5ad.2xlarge,0,1,1,8,16000,15841
+AWS (Ohio),m6a.2xlarge,0,1,1,8,32000,16688.53
+AWS (Ohio),c6gn.2xlarge,0,1,1,8,16000,15923.49
+AWS (Ohio),r6in.xlarge,0,1,1,4,32000,16035.18
+AWS (Ohio),m6gd.2xlarge,0,1,1,8,32000,16629.4
+AWS (Ohio),inf1.2xlarge,0,1,1,8,16000,16644
+AWS (Ohio),im4gn.xlarge,0,1,1,4,16000,17031.63
+AWS (Ohio),t2.2xlarge,0,1,0,8,32000,16790
+AWS (Ohio),z1d.xlarge,0,1,1,4,32000,17082
+AWS (Ohio),g4ad.xlarge,0,1,1,4,16000,17408.31
+AWS (Ohio),m5.2xlarge,0,1,1,8,32000,17666
+AWS (Ohio),m6i.2xlarge,0,1,1,8,32000,18543.46
+AWS (Ohio),c5d.2xlarge,0,1,1,8,16000,17666
+AWS (Ohio),r6idn.xlarge,0,1,1,4,32000,17971.87
+AWS (Ohio),c4.2xlarge,0,1,1,8,15000,18396
+AWS (Ohio),m4.2xlarge,0,1,1,8,32000,18089.4
+AWS (Ohio),r6g.2xlarge,0,1,1,8,64000,18542
+AWS (Ohio),c6id.2xlarge,0,1,1,8,16000,18549.3
+AWS (Ohio),a1.metal,0,1,1,16,32000,18761
+AWS (Ohio),a1.4xlarge,0,1,1,16,32000,18761
+AWS (Ohio),m5ad.2xlarge,0,1,1,8,32000,18980
+AWS (Ohio),r7g.2xlarge,0,1,1,8,64000,20688.2
+AWS (Ohio),c5n.2xlarge,0,1,1,8,21000,19856
+AWS (Ohio),r5a.2xlarge,0,1,1,8,64000,20805
+AWS (Ohio),m5d.2xlarge,0,1,1,8,32000,20805
+AWS (Ohio),i3en.xlarge,0,1,1,4,32000,22484
+AWS (Ohio),r6a.2xlarge,0,1,1,8,64000,21904.38
+AWS (Ohio),c6in.2xlarge,0,1,1,8,16000,20861.21
+AWS (Ohio),r6gd.2xlarge,0,1,1,8,64000,21191.9
+AWS (Ohio),h1.2xlarge,0,1,1,8,32000,23214
+AWS (Ohio),m6id.2xlarge,0,1,1,8,32000,21827
+AWS (Ohio),m5n.2xlarge,0,1,1,8,32000,21900
+AWS (Ohio),d3.xlarge,0,1,1,4,32000,22995
+AWS (Ohio),r5.2xlarge,0,1,1,8,64000,23214
+AWS (Ohio),r6i.2xlarge,0,1,1,8,64000,24338.2
+AWS (Ohio),r5ad.2xlarge,0,1,1,8,64000,24090
+AWS (Ohio),g4dn.xlarge,0,1,1,4,16000,24163
+AWS (Ohio),r4.2xlarge,0,1,1,8,61000,24528
+AWS (Ohio),g4ad.2xlarge,0,1,1,8,32000,24888.62
+AWS (Ohio),c6g.4xlarge,0,1,1,16,32000,25017.1
+AWS (Ohio),m5dn.2xlarge,0,1,1,8,32000,25039
+AWS (Ohio),m6in.2xlarge,0,1,1,8,32000,25612.78
+AWS (Ohio),r5d.2xlarge,0,1,1,8,64000,26499
+AWS (Ohio),is4gen.xlarge,0,1,1,4,24000,28693.38
+AWS (Ohio),c7g.4xlarge,0,1,1,16,32000,27915.2
+AWS (Ohio),r5n.2xlarge,0,1,1,8,64000,27375
+AWS (Ohio),r5b.2xlarge,0,1,1,8,64000,27410.04
+AWS (Ohio),r6id.2xlarge,0,1,1,8,64000,27747.3
+AWS (Ohio),c6a.4xlarge,0,1,1,16,32000,29553.32
+AWS (Ohio),c6gd.4xlarge,0,1,1,16,32000,28258.3
+AWS (Ohio),m6g.4xlarge,0,1,1,16,64000,28207.2
+AWS (Ohio),c5a.4xlarge,0,1,1,16,32000,28324
+AWS (Ohio),i3.2xlarge,0,1,1,8,61000,31244
+AWS (Ohio),m6idn.2xlarge,0,1,1,8,32000,29271.54
+AWS (Ohio),m7g.4xlarge,0,1,1,16,64000,31521.4
+AWS (Ohio),m5zn.2xlarge,0,1,1,8,32000,30382.6
+AWS (Ohio),r3.2xlarge,0,1,1,8,61000,30514
+AWS (Ohio),x2gd.2xlarge,0,1,1,8,128000,30054.1
+AWS (Ohio),r5dn.2xlarge,0,1,1,8,64000,30733
+AWS (Ohio),c5.4xlarge,0,1,1,16,32000,31244
+AWS (Ohio),c6i.4xlarge,0,1,1,16,32000,32836.86
+AWS (Ohio),i4i.2xlarge,0,1,1,8,64000,32485
+AWS (Ohio),m5a.4xlarge,0,1,1,16,64000,31609
+AWS (Ohio),c5ad.4xlarge,0,1,1,16,32000,31609
+AWS (Ohio),d2.xlarge,0,1,1,4,30000,29346
+AWS (Ohio),m6a.4xlarge,0,1,1,16,64000,33377.79
+AWS (Ohio),c6gn.4xlarge,0,1,1,16,32000,31846.25
+AWS (Ohio),r6in.2xlarge,0,1,1,8,64000,32069.63
+AWS (Ohio),m6gd.4xlarge,0,1,1,16,64000,33258.8
+AWS (Ohio),im4gn.2xlarge,0,1,1,8,32000,34063.26
+AWS (Ohio),z1d.2xlarge,0,1,1,8,64000,34237
+AWS (Ohio),g3s.xlarge,0,1,1,4,30000,40223
+AWS (Ohio),g4dn.2xlarge,0,1,1,8,32000,34602
+AWS (Ohio),m5.4xlarge,0,1,1,16,64000,35332
+AWS (Ohio),m6i.4xlarge,0,1,1,16,64000,37086.19
+AWS (Ohio),c5d.4xlarge,0,1,1,16,32000,35332
+AWS (Ohio),r6idn.2xlarge,0,1,1,8,64000,35943.74
+AWS (Ohio),c4.4xlarge,0,1,1,16,30000,36792
+AWS (Ohio),m4.4xlarge,0,1,1,16,64000,36178.8
+AWS (Ohio),r6g.4xlarge,0,1,1,16,128000,37084
+AWS (Ohio),c6id.4xlarge,0,1,1,16,32000,37098.6
+AWS (Ohio),m5ad.4xlarge,0,1,1,16,64000,37887
+AWS (Ohio),x2iedn.xlarge,0,1,1,4,128000,37443.89
+AWS (Ohio),x1e.xlarge,0,1,1,4,122000,37522
+AWS (Ohio),i2.xlarge,0,1,1,4,30000,30952
+AWS (Ohio),r7g.4xlarge,0,1,1,16,128000,41376.4
+AWS (Ohio),c5n.4xlarge,0,1,1,16,42000,39712
+AWS (Ohio),g4ad.4xlarge,0,1,1,16,64000,39873.33
+AWS (Ohio),p2.xlarge,0,1,1,4,61000,44822
+AWS (Ohio),r5a.4xlarge,0,1,1,16,128000,41610
+AWS (Ohio),m5d.4xlarge,0,1,1,16,64000,41610
+AWS (Ohio),i3en.2xlarge,0,1,1,8,64000,44968
+AWS (Ohio),r6a.4xlarge,0,1,1,16,128000,43808.03
+AWS (Ohio),c6in.4xlarge,0,1,1,16,32000,41722.42
+AWS (Ohio),r6gd.4xlarge,0,1,1,16,128000,42383.8
+AWS (Ohio),h1.4xlarge,0,1,1,16,64000,46428
+AWS (Ohio),m6id.4xlarge,0,1,1,16,64000,43654
+AWS (Ohio),m5n.4xlarge,0,1,1,16,64000,43800
+AWS (Ohio),m5zn.3xlarge,0,1,1,12,48000,45573.9
+AWS (Ohio),d3.2xlarge,0,1,1,8,64000,45917
+AWS (Ohio),r5.4xlarge,0,1,1,16,128000,46355
+AWS (Ohio),r6i.4xlarge,0,1,1,16,128000,48675.67
+AWS (Ohio),r5ad.4xlarge,0,1,1,16,128000,48180
+AWS (Ohio),r4.4xlarge,0,1,1,16,122000,49056
+AWS (Ohio),c6g.8xlarge,0,1,1,32,64000,50034.2
+AWS (Ohio),m5dn.4xlarge,0,1,1,16,64000,50005
+AWS (Ohio),m6in.4xlarge,0,1,1,16,64000,51225.56
+AWS (Ohio),z1d.3xlarge,0,1,1,12,96000,51319
+AWS (Ohio),g3.4xlarge,0,1,1,16,122000,56801.3
+AWS (Ohio),r5d.4xlarge,0,1,1,16,128000,52998
+AWS (Ohio),is4gen.2xlarge,0,1,1,8,48000,57386.03
+AWS (Ohio),c7g.8xlarge,0,1,1,32,64000,55830.4
+AWS (Ohio),inf1.6xlarge,0,1,1,24,48000,54312
+AWS (Ohio),r5n.4xlarge,0,1,1,16,128000,54823
+AWS (Ohio),r5b.4xlarge,0,1,1,16,128000,54820.08
+AWS (Ohio),g4dn.4xlarge,0,1,1,16,64000,55407
+AWS (Ohio),r6id.4xlarge,0,1,1,16,128000,55494.6
+AWS (Ohio),c6a.8xlarge,0,1,1,32,64000,59106.64
+AWS (Ohio),c6gd.8xlarge,0,1,1,32,64000,56509.3
+AWS (Ohio),m6g.8xlarge,0,1,1,32,128000,56414.4
+AWS (Ohio),c5a.8xlarge,0,1,1,32,64000,56648
+AWS (Ohio),i3.4xlarge,0,1,1,16,122000,62561
+AWS (Ohio),m6idn.4xlarge,0,1,1,16,64000,58543.08
+AWS (Ohio),m7g.8xlarge,0,1,1,32,128000,63050.1
+AWS (Ohio),r3.4xlarge,0,1,1,16,122000,61028
+AWS (Ohio),x2gd.4xlarge,0,1,1,16,256000,60100.9
+AWS (Ohio),r5dn.4xlarge,0,1,1,16,128000,61466
+AWS (Ohio),i3en.3xlarge,0,1,1,12,96000,67452
+AWS (Ohio),c6i.8xlarge,0,1,1,32,64000,65673.72
+AWS (Ohio),i4i.4xlarge,0,1,1,16,128000,65043
+AWS (Ohio),m5a.8xlarge,0,1,1,32,128000,63291
+AWS (Ohio),c5ad.8xlarge,0,1,1,32,64000,63291
+AWS (Ohio),d2.2xlarge,0,1,1,8,61000,58692
+AWS (Ohio),m6a.8xlarge,0,1,1,32,128000,66755.58
+AWS (Ohio),c6gn.8xlarge,0,1,1,32,64000,63693.23
+AWS (Ohio),r6in.4xlarge,0,1,1,16,128000,64139.26
+AWS (Ohio),m6gd.8xlarge,0,1,1,32,128000,66517.6
+AWS (Ohio),im4gn.4xlarge,0,1,1,16,64000,68126.52
+AWS (Ohio),c5.9xlarge,0,1,1,36,72000,70372
+AWS (Ohio),m5.8xlarge,0,1,1,32,128000,70664
+AWS (Ohio),m6i.8xlarge,0,1,1,32,128000,74172.38
+AWS (Ohio),r6idn.4xlarge,0,1,1,16,128000,71888.21
+AWS (Ohio),c4.8xlarge,0,1,1,36,60000,73584
+AWS (Ohio),r6g.8xlarge,0,1,1,32,256000,74175.3
+AWS (Ohio),c6id.8xlarge,0,1,1,32,64000,74197.2
+AWS (Ohio),c6g.12xlarge,0,1,1,48,96000,75058.6
+AWS (Ohio),m5ad.8xlarge,0,1,1,32,128000,75774
+AWS (Ohio),x2iedn.2xlarge,0,1,1,8,256000,74887.78
+AWS (Ohio),x1e.2xlarge,0,1,1,8,244000,75044
+AWS (Ohio),i2.2xlarge,0,1,1,8,61000,61904
+AWS (Ohio),r7g.8xlarge,0,1,1,32,256000,82745.5
+AWS (Ohio),c5d.9xlarge,0,1,1,36,72000,79497
+AWS (Ohio),g4ad.8xlarge,0,1,1,32,128000,79746.66
+AWS (Ohio),c7g.12xlarge,0,1,1,48,96000,83745.6
+AWS (Ohio),r5a.8xlarge,0,1,1,32,256000,83147
+AWS (Ohio),m5d.8xlarge,0,1,1,32,128000,83147
+AWS (Ohio),r6a.8xlarge,0,1,1,32,256000,87616.79
+AWS (Ohio),c6in.8xlarge,0,1,1,32,64000,83444.11
+AWS (Ohio),c6a.12xlarge,0,1,1,48,96000,88659.23
+AWS (Ohio),r6gd.8xlarge,0,1,1,32,256000,84767.6
+AWS (Ohio),c6gd.12xlarge,0,1,1,48,96000,84767.6
+AWS (Ohio),m6g.12xlarge,0,1,1,48,192000,84621.6
+AWS (Ohio),c5a.12xlarge,0,1,1,48,96000,84972
+AWS (Ohio),h1.8xlarge,0,1,1,32,128000,92856
+AWS (Ohio),m6id.8xlarge,0,1,1,32,128000,87307.27
+AWS (Ohio),m5n.8xlarge,0,1,1,32,128000,87600
+AWS (Ohio),c5n.9xlarge,0,1,1,36,96000,89425
+AWS (Ohio),m7g.12xlarge,0,1,1,48,192000,94571.5
+AWS (Ohio),m5zn.6xlarge,0,1,1,24,96000,91155.1
+AWS (Ohio),d3.4xlarge,0,1,1,16,128000,91907
+AWS (Ohio),m4.10xlarge,0,1,1,40,160000,90447
+AWS (Ohio),r5.8xlarge,0,1,1,32,256000,92710
+AWS (Ohio),r6i.8xlarge,0,1,1,32,256000,97351.34
+AWS (Ohio),c5.12xlarge,0,1,1,48,96000,93805
+AWS (Ohio),c6i.12xlarge,0,1,1,48,96000,98510.58
+AWS (Ohio),m5a.12xlarge,0,1,1,48,192000,94900
+AWS (Ohio),c5ad.12xlarge,0,1,1,48,96000,94900
+AWS (Ohio),m6a.12xlarge,0,1,1,48,192000,100133.37
+AWS (Ohio),c6gn.12xlarge,0,1,1,48,96000,95539.48
+AWS (Ohio),r5ad.8xlarge,0,1,1,32,256000,96360
+AWS (Ohio),r4.8xlarge,0,1,1,32,244000,98112
+AWS (Ohio),m6gd.12xlarge,0,1,1,48,192000,99776.4
+AWS (Ohio),c6g.16xlarge,0,1,1,64,128000,100075.7
+AWS (Ohio),c6g.metal,0,1,1,64,128000,100075.7
+AWS (Ohio),g4dn.8xlarge,0,1,1,32,128000,100083
+AWS (Ohio),m5dn.8xlarge,0,1,1,32,128000,100083
+AWS (Ohio),m6in.8xlarge,0,1,1,32,128000,102451.12
+AWS (Ohio),z1d.6xlarge,0,1,1,24,192000,102638
+AWS (Ohio),g3.8xlarge,0,1,1,32,244000,113595.3
+AWS (Ohio),r5d.8xlarge,0,1,1,32,256000,105996
+AWS (Ohio),m5.12xlarge,0,1,1,48,192000,105996
+AWS (Ohio),m6i.12xlarge,0,1,1,48,192000,111259.3
+AWS (Ohio),c5d.12xlarge,0,1,1,48,96000,105996
+AWS (Ohio),is4gen.4xlarge,0,1,1,16,96000,114772.79
+AWS (Ohio),c7g.16xlarge,0,1,1,64,128000,111660.8
+AWS (Ohio),c7g.metal,0,1,1,64,128000,111660.8
+AWS (Ohio),r5n.8xlarge,0,1,1,32,256000,109646
+AWS (Ohio),r5b.8xlarge,0,1,1,32,256000,109640.16
+AWS (Ohio),r6g.12xlarge,0,1,1,48,384000,111259.3
+AWS (Ohio),r6id.8xlarge,0,1,1,32,256000,110989.2
+AWS (Ohio),c6id.12xlarge,0,1,1,48,96000,111295.8
+AWS (Ohio),c6a.16xlarge,0,1,1,64,128000,118212.55
+AWS (Ohio),c6gd.metal,0,1,1,64,128000,113025.9
+AWS (Ohio),c6gd.16xlarge,0,1,1,64,128000,113025.9
+AWS (Ohio),m6g.16xlarge,0,1,1,64,256000,112828.8
+AWS (Ohio),m6g.metal,0,1,1,64,256000,112828.8
+AWS (Ohio),c5a.16xlarge,0,1,1,64,128000,113296
+AWS (Ohio),m5ad.12xlarge,0,1,1,48,192000,113661
+AWS (Ohio),i3.8xlarge,0,1,1,32,244000,125122
+AWS (Ohio),m6idn.8xlarge,0,1,1,32,128000,117086.89
+AWS (Ohio),r7g.12xlarge,0,1,1,48,384000,124121.9
+AWS (Ohio),m7g.16xlarge,0,1,1,64,256000,126092.9
+AWS (Ohio),m7g.metal,0,1,1,64,256000,126092.9
+AWS (Ohio),r3.8xlarge,0,1,1,32,244000,122056
+AWS (Ohio),x2gd.8xlarge,0,1,1,32,512000,120201.8
+AWS (Ohio),r5dn.8xlarge,0,1,1,32,256000,122859
+AWS (Ohio),r5a.12xlarge,0,1,1,48,384000,124757
+AWS (Ohio),m5d.12xlarge,0,1,1,48,192000,124757
+AWS (Ohio),i3en.6xlarge,0,1,1,24,192000,134831
+AWS (Ohio),c6i.16xlarge,0,1,1,64,128000,131347.44
+AWS (Ohio),r6a.12xlarge,0,1,1,48,384000,131424.82
+AWS (Ohio),c6in.12xlarge,0,1,1,48,96000,125166.53
+AWS (Ohio),i4i.8xlarge,0,1,1,32,256000,130086
+AWS (Ohio),m5a.16xlarge,0,1,1,64,256000,126582
+AWS (Ohio),c5ad.16xlarge,0,1,1,64,128000,126582
+AWS (Ohio),d2.4xlarge,0,1,1,16,122000,117384
+AWS (Ohio),r6gd.12xlarge,0,1,1,48,384000,127151.4
+AWS (Ohio),m6a.16xlarge,0,1,1,64,256000,133511.16
+AWS (Ohio),c6gn.16xlarge,0,1,1,64,128000,127386.46
+AWS (Ohio),r6in.8xlarge,0,1,1,32,256000,128279.25
+AWS (Ohio),m6id.12xlarge,0,1,1,48,192000,130961.27
+AWS (Ohio),m5n.12xlarge,0,1,1,48,192000,131327
+AWS (Ohio),m6gd.16xlarge,0,1,1,64,256000,133042.5
+AWS (Ohio),m6gd.metal,0,1,1,64,256000,133042.5
+AWS (Ohio),im4gn.8xlarge,0,1,1,32,128000,136253.04
+AWS (Ohio),r5.12xlarge,0,1,1,48,384000,139065
+AWS (Ohio),r6i.12xlarge,0,1,1,48,384000,146027.74
+AWS (Ohio),c5.18xlarge,0,1,1,72,144000,140744
+AWS (Ohio),p3.2xlarge,0,1,1,8,61000,152424
+AWS (Ohio),m5.16xlarge,0,1,1,64,256000,141255
+AWS (Ohio),m6i.16xlarge,0,1,1,64,256000,148345.49
+AWS (Ohio),r6idn.8xlarge,0,1,1,32,256000,143775.69
+AWS (Ohio),r5ad.12xlarge,0,1,1,48,384000,144613
+AWS (Ohio),m4.16xlarge,0,1,1,64,256000,144715.2
+AWS (Ohio),r6g.metal,0,1,1,64,512000,148343.3
+AWS (Ohio),r6g.16xlarge,0,1,1,64,512000,148343.3
+AWS (Ohio),c6id.16xlarge,0,1,1,64,128000,148394.4
+AWS (Ohio),m5dn.12xlarge,0,1,1,48,192000,150088
+AWS (Ohio),m5ad.16xlarge,0,1,1,64,256000,151548
+AWS (Ohio),x2iedn.4xlarge,0,1,1,16,512000,149775.56
+AWS (Ohio),x1e.4xlarge,0,1,1,16,488000,150088
+AWS (Ohio),m6in.12xlarge,0,1,1,48,192000,153676.68
+AWS (Ohio),i2.4xlarge,0,1,1,16,122000,123808
+AWS (Ohio),r7g.metal,0,1,1,64,512000,165498.3
+AWS (Ohio),r7g.16xlarge,0,1,1,64,512000,165498.3
+AWS (Ohio),r5d.12xlarge,0,1,1,48,384000,158921
+AWS (Ohio),c5d.18xlarge,0,1,1,72,144000,158921
+AWS (Ohio),g4ad.16xlarge,0,1,1,64,256000,159493.32
+AWS (Ohio),r5n.12xlarge,0,1,1,48,384000,164469
+AWS (Ohio),r5b.12xlarge,0,1,1,48,384000,164460.24
+AWS (Ohio),r5a.16xlarge,0,1,1,64,512000,166294
+AWS (Ohio),m5d.16xlarge,0,1,1,64,256000,166294
+AWS (Ohio),r6a.16xlarge,0,1,1,64,512000,175232.85
+AWS (Ohio),r6id.12xlarge,0,1,1,48,384000,166483.8
+AWS (Ohio),c6in.16xlarge,0,1,1,64,128000,166888.22
+AWS (Ohio),c6a.24xlarge,0,1,1,96,192000,177319.19
+AWS (Ohio),r6gd.16xlarge,0,1,1,64,512000,169535.2
+AWS (Ohio),r6gd.metal,0,1,1,64,512000,169535.2
+AWS (Ohio),c5a.24xlarge,0,1,1,96,192000,169944
+AWS (Ohio),h1.16xlarge,0,1,1,64,256000,185785
+AWS (Ohio),m6id.16xlarge,0,1,1,64,256000,174614.54
+AWS (Ohio),m5n.16xlarge,0,1,1,64,256000,175127
+AWS (Ohio),m6idn.12xlarge,0,1,1,48,192000,175629.97
+AWS (Ohio),c5n.18xlarge,0,1,1,72,192000,178777
+AWS (Ohio),c5n.metal,0,1,1,72,192000,178777
+AWS (Ohio),g4dn.12xlarge,0,1,1,48,192000,179945
+AWS (Ohio),m5zn.metal,0,1,1,48,192000,182310.2
+AWS (Ohio),m5zn.12xlarge,0,1,1,48,192000,182310.2
+AWS (Ohio),d3.8xlarge,0,1,1,32,256000,183754.14
+AWS (Ohio),x2gd.12xlarge,0,1,1,48,768000,180302.7
+AWS (Ohio),r5dn.12xlarge,0,1,1,48,384000,184325
+AWS (Ohio),r5.16xlarge,0,1,1,64,512000,185420
+AWS (Ohio),r6i.16xlarge,0,1,1,64,512000,194703.41
+AWS (Ohio),c5.metal,0,1,1,96,192000,187610
+AWS (Ohio),c5.24xlarge,0,1,1,96,192000,187610
+AWS (Ohio),c6i.24xlarge,0,1,1,96,192000,197021.16
+AWS (Ohio),m5a.24xlarge,0,1,1,96,384000,189873
+AWS (Ohio),c5ad.24xlarge,0,1,1,96,192000,189873
+AWS (Ohio),m6a.24xlarge,0,1,1,96,384000,200266.01
+AWS (Ohio),r6in.12xlarge,0,1,1,48,384000,192418.51
+AWS (Ohio),r5ad.16xlarge,0,1,1,64,512000,192793
+AWS (Ohio),r4.16xlarge,0,1,1,64,488000,196224
+AWS (Ohio),m5dn.16xlarge,0,1,1,64,256000,200166
+AWS (Ohio),g4dn.16xlarge,0,1,1,64,256000,200166
+AWS (Ohio),m6in.16xlarge,0,1,1,64,256000,204902.24
+AWS (Ohio),z1d.metal,0,1,1,48,384000,205276
+AWS (Ohio),z1d.12xlarge,0,1,1,48,384000,205276
+AWS (Ohio),g3.16xlarge,0,1,1,64,488000,227190.6
+AWS (Ohio),r5d.16xlarge,0,1,1,64,512000,211919
+AWS (Ohio),m5.metal,0,1,1,96,384000,211919
+AWS (Ohio),m5.24xlarge,0,1,1,96,384000,211919
+AWS (Ohio),m6i.24xlarge,0,1,1,96,384000,222517.87
+AWS (Ohio),c5d.24xlarge,0,1,1,96,192000,211919
+AWS (Ohio),c5d.metal,0,1,1,96,192000,211919
+AWS (Ohio),is4gen.8xlarge,0,1,1,32,192000,229545.58
+AWS (Ohio),r6idn.12xlarge,0,1,1,48,384000,215663.9
+AWS (Ohio),inf1.24xlarge,0,1,1,96,192000,217102
+AWS (Ohio),r5b.16xlarge,0,1,1,64,512000,219280.32
+AWS (Ohio),r5n.16xlarge,0,1,1,64,512000,219292
+AWS (Ohio),r6id.16xlarge,0,1,1,64,512000,221978.4
+AWS (Ohio),c6id.24xlarge,0,1,1,96,192000,222591.6
+AWS (Ohio),c6a.32xlarge,0,1,1,128,256000,236425.1
+AWS (Ohio),m5ad.24xlarge,0,1,1,96,384000,227395
+AWS (Ohio),i3.metal,0,1,1,72,512000,250171
+AWS (Ohio),i3.16xlarge,0,1,1,64,488000,250171
+AWS (Ohio),m6idn.16xlarge,0,1,1,64,256000,234173.78
+AWS (Ohio),x2gd.metal,0,1,1,64,1024000,240403.6
+AWS (Ohio),x2gd.16xlarge,0,1,1,64,1024000,240403.6
+AWS (Ohio),r5dn.16xlarge,0,1,1,64,512000,245791
+AWS (Ohio),r5a.24xlarge,0,1,1,96,768000,249441
+AWS (Ohio),m5d.metal,0,1,1,96,384000,249441
+AWS (Ohio),m5d.24xlarge,0,1,1,96,384000,249441
+AWS (Ohio),i3en.12xlarge,0,1,1,48,384000,269662
+AWS (Ohio),c6i.32xlarge,0,1,1,128,256000,262694.88
+AWS (Ohio),c6i.metal,0,1,1,128,256000,262694.88
+AWS (Ohio),r6a.24xlarge,0,1,1,96,768000,262849.64
+AWS (Ohio),c6in.24xlarge,0,1,1,96,192000,250333.06
+AWS (Ohio),i4i.16xlarge,0,1,1,64,512000,260099
+AWS (Ohio),d2.8xlarge,0,1,1,36,244000,234768
+AWS (Ohio),m6a.32xlarge,0,1,1,128,512000,267021.59
+AWS (Ohio),r6in.16xlarge,0,1,1,64,512000,256557.77
+AWS (Ohio),m6id.24xlarge,0,1,1,96,384000,261922.54
+AWS (Ohio),m5n.metal,0,1,1,96,384000,262727
+AWS (Ohio),m5n.24xlarge,0,1,1,96,384000,262727
+AWS (Ohio),im4gn.16xlarge,0,1,1,64,256000,272506.08
+AWS (Ohio),r5.metal,0,1,1,96,768000,278130
+AWS (Ohio),r5.24xlarge,0,1,1,96,768000,278130
+AWS (Ohio),r6i.24xlarge,0,1,1,96,768000,292054.75
+AWS (Ohio),m6i.metal,0,1,1,128,512000,296690.98
+AWS (Ohio),m6i.32xlarge,0,1,1,128,512000,296690.98
+AWS (Ohio),r6idn.16xlarge,0,1,1,64,512000,287551.38
+AWS (Ohio),r5ad.24xlarge,0,1,1,96,768000,289153
+AWS (Ohio),c6id.32xlarge,0,1,1,128,256000,296788.8
+AWS (Ohio),c6id.metal,0,1,1,128,256000,296788.8
+AWS (Ohio),m5dn.24xlarge,0,1,1,96,384000,300249
+AWS (Ohio),m5dn.metal,0,1,1,96,384000,300249
+AWS (Ohio),x2idn.16xlarge,0,1,1,64,1024000,299551.12
+AWS (Ohio),x2iedn.8xlarge,0,1,1,32,1024000,299551.12
+AWS (Ohio),x1.16xlarge,0,1,1,64,976000,300030
+AWS (Ohio),x1e.8xlarge,0,1,1,32,976000,300176
+AWS (Ohio),m6in.24xlarge,0,1,1,96,384000,307353.36
+AWS (Ohio),i2.8xlarge,0,1,1,32,244000,247616
+AWS (Ohio),r5d.metal,0,1,1,96,768000,317915
+AWS (Ohio),r5d.24xlarge,0,1,1,96,768000,317915
+AWS (Ohio),r5n.24xlarge,0,1,1,96,768000,328938
+AWS (Ohio),r5b.24xlarge,0,1,1,96,768000,328920.48
+AWS (Ohio),r5n.metal,0,1,1,96,768000,328938
+AWS (Ohio),r5b.metal,0,1,1,96,768000,328920.48
+AWS (Ohio),p2.8xlarge,0,1,1,32,488000,358722
+AWS (Ohio),r6a.32xlarge,0,1,1,128,1024000,350465.7
+AWS (Ohio),r6id.24xlarge,0,1,1,96,768000,332967.6
+AWS (Ohio),c6in.32xlarge,0,1,1,128,256000,333777.17
+AWS (Ohio),c6in.metal,0,1,1,128,256000,333777.17
+AWS (Ohio),c6a.48xlarge,0,1,1,192,384000,354638.38
+AWS (Ohio),c6a.metal,0,1,1,192,384000,354638.38
+AWS (Ohio),m6id.32xlarge,0,1,1,128,512000,349229.81
+AWS (Ohio),m6id.metal,0,1,1,128,512000,349229.81
+AWS (Ohio),m6idn.24xlarge,0,1,1,96,384000,351260.67
+AWS (Ohio),g4dn.metal,0,1,1,96,384000,359817
+AWS (Ohio),r5dn.metal,0,1,1,96,768000,368650
+AWS (Ohio),r5dn.24xlarge,0,1,1,96,768000,368650
+AWS (Ohio),r6i.metal,0,1,1,128,1024000,389406.82
+AWS (Ohio),r6i.32xlarge,0,1,1,128,1024000,389406.82
+AWS (Ohio),m6a.48xlarge,0,1,1,192,768000,400532.75
+AWS (Ohio),m6a.metal,0,1,1,192,768000,400532.75
+AWS (Ohio),r6in.24xlarge,0,1,1,96,768000,384837.02
+AWS (Ohio),m6in.32xlarge,0,1,1,128,512000,409803.75
+AWS (Ohio),m6in.metal,0,1,1,128,512000,409803.75
+AWS (Ohio),r6idn.24xlarge,0,1,1,96,768000,431327.07
+AWS (Ohio),r6id.32xlarge,0,1,1,128,1024000,443956.8
+AWS (Ohio),r6id.metal,0,1,1,128,1024000,443956.8
+AWS (Ohio),x2idn.24xlarge,0,1,1,96,1536000,449325.95
+AWS (Ohio),m6idn.32xlarge,0,1,1,128,512000,468347.56
+AWS (Ohio),m6idn.metal,0,1,1,128,512000,468347.56
+AWS (Ohio),i3en.24xlarge,0,1,1,96,768000,539324
+AWS (Ohio),i3en.metal,0,1,1,96,768000,539324
+AWS (Ohio),r6a.48xlarge,0,1,1,192,1536000,525698.55
+AWS (Ohio),r6a.metal,0,1,1,192,1536000,525698.55
+AWS (Ohio),i4i.metal,0,1,1,128,1024000,520271
+AWS (Ohio),i4i.32xlarge,0,1,1,128,1024000,520238.88
+AWS (Ohio),r6in.32xlarge,0,1,1,128,1024000,513116.27
+AWS (Ohio),r6in.metal,0,1,1,128,1024000,513116.27
+AWS (Ohio),p3.8xlarge,0,1,1,32,244000,609842
+AWS (Ohio),r6idn.32xlarge,0,1,1,128,1024000,575102.76
+AWS (Ohio),r6idn.metal,0,1,1,128,1024000,575102.76
+AWS (Ohio),x2idn.32xlarge,0,1,1,128,2048000,599101.51
+AWS (Ohio),x2idn.metal,0,1,1,128,2048000,599101.51
+AWS (Ohio),x2iedn.16xlarge,0,1,1,64,2048000,599101.51
+AWS (Ohio),x1.32xlarge,0,1,1,128,1952000,599987
+AWS (Ohio),x1e.16xlarge,0,1,1,64,1952000,600279
+AWS (Ohio),p2.16xlarge,0,1,1,64,732000,717444
+AWS (Ohio),x2iedn.24xlarge,0,1,1,96,3072000,898652.63
+AWS (Ohio),p3.16xlarge,0,1,1,64,488000,1219684
+AWS (Ohio),x2iedn.32xlarge,0,1,1,128,4096000,1198203.02
+AWS (Ohio),x2iedn.metal,0,1,1,128,4096000,1198203.02
+AWS (Ohio),x1e.32xlarge,0,1,1,128,3904000,1200558
+AWS (Ohio),u-3tb1.56xlarge,0,1,1,224,3072000,1228114.77
+AWS (Ohio),p4d.24xlarge,0,1,1,96,1152000,1472811.35
+AWS (Ohio),u-6tb1.56xlarge,0,1,1,224,6144000,2087521.14
+AWS (Ohio),u-6tb1.112xlarge,0,1,1,448,6144000,2456229.54
+AWS (Ohio),u-12tb1.112xlarge,0,1,1,448,12288000,4913295.66

@@ -1,0 +1,138 @@
+<div class='max-w-xl'>
+
+  <div class='mx-auto'>
+    <h1 class='font-bold text-2xl'>Ruby on Rails Capacity Calculator</h1>
+  </div>
+
+  <h2 class='font-semi-bold text-lg mt-1 text-gray-400'>How many workers do you need?</h2>
+
+  <% if @form.number_of_app_workers.present? %>
+    <div class="my-5 text-emerald-400">
+
+      <p class=' font-medium text-lg'>
+      You need <%= number_with_delimiter @form.number_of_app_workers %> workers if you want to serve
+      <%= number_with_delimiter @form.average_request_per_sec.ceil %> requests per second
+      at a <%= number_to_percentage @form.util_pct.to_f, precision: 0 %> utilization rate.
+
+      <% if @form.one_hundred_utilization_requests.present? %>
+        You'd be able to handle bursts of traffic of <%= number_with_delimiter @form.one_hundred_utilization_requests.ceil  %> requests per second (100% utilization).
+      <% end %>
+      </p>
+
+      <% if @form.number_of_workers_per_cpu %>
+        <p class='font-medium text-lg mt-2'>
+        With <%= @form.number_of_workers_per_cpu %> workers per CPU, you'll need to enough servers so that the total number of CPUs is <%= number_with_delimiter @form.number_of_required_cpus %>.
+        <% if @form.memory_per_process.present? %>
+          It's recommended allocating enough memory so that you have <%= number_with_precision @form.recommended_memory_per_process, precision: 2 %> <%= @form.memory_per_process_units.upcase %> per worker.
+        <% end %>
+        </p>
+      <% end %>
+
+
+
+      <% if @form.average_request_per_sec > 600 %>
+
+        <p class='font-medium text-lg mt-2'>
+        With this level of traffic, you'll need to use different non-conventional techniques such as database replicas,
+        heavy use of caching or a CDN, write-ahead caching.
+        </p>
+
+      <% end %>
+
+    </div>
+  <% end %>
+
+  <%= form_for(@form, url: tools_calculate_path, html: { class: "contents" }) do |f| %>
+  <% if @form.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(@form.errors.count, "error") %> prohibited this capacity from being calculated:</h2>
+
+      <ul>
+        <% @form.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class='max-w-lg mt-5'>
+
+    <div>
+      <div class="flex">
+        <%= f.label :total_requests, 'Total requests per', class: "block text-sm font-medium leading-6 text-gray-900" %>
+        <%= f.radio_button :request_scale, 'second', class: "h-4 w-4 border-gray-300 text-gray-900 focus:ring-indigo-600 mt-1 ml-3", checked: @form.request_scale.blank? || @form.request_scale == 'second' %>
+        <%= f.label :request_scale_second, 'sec', class: 'text-sm leading-6 font-medium ml-2' %>
+
+        <%= f.radio_button :request_scale, 'minute', class: "h-4 w-4 border-gray-300 text-gray-900 focus:ring-indigo-600 mt-1 ml-3" %>
+        <%= f.label :request_scale_minute, 'min', class: 'text-sm leading-6 font-medium ml-2' %>
+
+        <%= f.radio_button :request_scale, 'hour', class: "h-4 w-4 border-gray-300 text-gray-900 focus:ring-indigo-600 mt-1 ml-3" %>
+        <%= f.label :request_scale_hour, 'hour', class: 'text-sm leading-6 font-medium ml-2' %>
+
+        <%= f.radio_button :request_scale, 'day', class: "h-4 w-4 border-gray-300 text-gray-900 focus:ring-indigo-600 mt-1 ml-3" %>
+        <%= f.label :request_scale_day, 'day', class: 'text-sm leading-6 font-medium ml-2' %>
+
+        <%= f.radio_button :request_scale, 'month', class: "h-4 w-4 border-gray-300 text-gray-900 focus:ring-indigo-600 mt-1 ml-3" %>
+        <%= f.label :request_scale_month, 'month', class: 'text-sm leading-6 font-medium ml-2' %>
+      </div>
+
+      <div class="mt-2">
+        <%= f.number_field :total_requests, autocomplete: 'off', class: "block w-full sm:max-w-xs rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" %>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class='mt-5'>
+    <div class="flex justify-between">
+      <%= f.label :average_response_time_in_ms, 'Avg response time in milliseconds', class: 'block text-sm font-medium leading-6 text-gray-900' %>
+    </div>
+    <div class="mt-2">
+      <%= f.number_field :average_response_time_in_ms, class: "block w-full sm:max-w-xs rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" %>
+    </div>
+  </div>
+
+
+  <div class='mt-5'>
+    <div class="flex justify-between">
+      <%= f.label :util_pct, 'What % of your workers should be utilized?', class: 'block text-sm font-medium leading-6 text-gray-900' %>
+    </div>
+    <div class="mt-2">
+      <%= f.number_field :util_pct, class: "block w-full sm:max-w-xs rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" %>
+    </div>
+  </div>
+
+
+  <div class='mt-5'>
+    <div class="flex justify-between">
+      <%= f.label :number_of_workers_per_cpu, 'Number of workers per CPU (optional)', class: 'block text-sm font-medium leading-6 text-gray-900' %>
+    </div>
+    <div class="mt-2">
+      <%= f.number_field :number_of_workers_per_cpu, step: '0.01', class: "block w-full sm:max-w-xs rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" %>
+    </div>
+  </div>
+
+  <div class='mt-5'>
+    <div class="flex">
+      <%= f.label :memory_per_process, 'Memory usage per process (optional)', class: "block text-sm font-medium leading-6 text-gray-900" %>
+
+      <%= f.radio_button :memory_per_process_units, 'mb', class: "h-4 w-4 border-gray-300 text-gray-900 focus:ring-indigo-600 mt-1 ml-3", checked: @form.memory_per_process_units.blank? || @form.memory_per_process_units == 'mb' %>
+      <%= f.label :memory_per_process_units_mb, 'MB', class: 'text-sm leading-6 font-medium ml-2' %>
+
+      <%= f.radio_button :memory_per_process_units, 'gb', class: "h-4 w-4 border-gray-300 text-gray-900 focus:ring-indigo-600 mt-1 ml-3" %>
+      <%= f.label :memory_per_process_units_gb, 'GB', class: 'text-sm leading-6 font-medium ml-2' %>
+    </div>
+
+    <div class="mt-2">
+      <%= f.number_field :total_requests, autocomplete: 'off', class: "block w-full sm:max-w-xs rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" %>
+    </div>
+  </div>
+
+  <div class="mt-5">
+    <%= f.submit 'Submit', class: "rounded-md bg-indigo-600 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" %>
+  </div>
+
+
+  <% end %>
+</div>

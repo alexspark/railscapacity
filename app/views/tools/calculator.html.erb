@@ -1,0 +1,223 @@
+<div class='max-w-md'>
+
+  <div class='mx-auto'>
+    <h1 class='font-bold text-2xl'>Ruby on Rails Capacity Estimation</h1>
+  </div>
+
+  <h2 class='font-semi-bold text-lg mt-1 text-gray-400'>How many workers do you need?</h2>
+
+  <div class='divide-y'>
+    <div>
+      <%= form_for(@form, url: calculate_path, html: { class: "contents" }) do |f| %>
+        <% if @form.errors.any? %>
+          <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+            <h2><%= pluralize(@form.errors.count, "error") %> prohibited this capacity from being calculated:</h2>
+
+            <ul>
+              <% @form.errors.each do |error| %>
+                <li><%= error.full_message %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+        <div class='max-w-lg mt-5'>
+
+          <div>
+            <div class="flex">
+              <%= f.label :total_requests, 'Total requests per', class: "block text-sm font-medium leading-6 text-gray-900" %>
+              <%= f.radio_button :request_scale, 'second', class: "h-4 w-4 border-gray-300 text-gray-900 focus:ring-sky-600 mt-1 ml-3", checked: @form.request_scale.blank? || @form.request_scale == 'second' %>
+              <%= f.label :request_scale_second, 'sec', class: 'text-sm leading-6 font-medium ml-2' %>
+
+              <%= f.radio_button :request_scale, 'minute', class: "h-4 w-4 border-gray-300 text-gray-900 focus:ring-sky-600 mt-1 ml-3" %>
+              <%= f.label :request_scale_minute, 'min', class: 'text-sm leading-6 font-medium ml-2' %>
+
+              <%= f.radio_button :request_scale, 'hour', class: "h-4 w-4 border-gray-300 text-gray-900 focus:ring-sky-600 mt-1 ml-3" %>
+              <%= f.label :request_scale_hour, 'hour', class: 'text-sm leading-6 font-medium ml-2' %>
+
+              <%= f.radio_button :request_scale, 'day', class: "h-4 w-4 border-gray-300 text-gray-900 focus:ring-sky-600 mt-1 ml-3" %>
+              <%= f.label :request_scale_day, 'day', class: 'text-sm leading-6 font-medium ml-2' %>
+
+              <%= f.radio_button :request_scale, 'month', class: "h-4 w-4 border-gray-300 text-gray-900 focus:ring-sky-600 mt-1 ml-3" %>
+              <%= f.label :request_scale_month, 'month', class: 'text-sm leading-6 font-medium ml-2' %>
+            </div>
+
+            <div class="mt-2">
+              <%= f.number_field :total_requests, autocomplete: 'off', class: "block w-full sm:max-w-xs rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6" %>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class='mt-5'>
+          <div class="flex justify-between">
+            <%= f.label :average_response_time_in_ms, 'Avg response time in milliseconds', class: 'block text-sm font-medium leading-6 text-gray-900' %>
+          </div>
+          <div class="mt-2">
+            <%= f.number_field :average_response_time_in_ms, class: "block w-full sm:max-w-xs rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6" %>
+          </div>
+        </div>
+
+
+        <div class='mt-5'>
+          <div class="flex justify-between">
+            <%= f.label :util_pct, 'What % of your workers should be utilized?', class: 'block text-sm font-medium leading-6 text-gray-900' %>
+          </div>
+          <div class="mt-2">
+            <%= f.number_field :util_pct, class: "block w-full sm:max-w-xs rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6" %>
+          </div>
+        </div>
+
+
+        <div class='mt-5'>
+          <div class="flex justify-between">
+            <%= f.label :number_of_workers_per_cpu, 'Number of workers per CPU (optional)', class: 'block text-sm font-medium leading-6 text-gray-900' %>
+          </div>
+          <div class="mt-2">
+            <%= f.number_field :number_of_workers_per_cpu, step: '0.01', class: "block w-full sm:max-w-xs rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6" %>
+          </div>
+        </div>
+
+        <div class='mt-5'>
+          <div class="flex">
+            <%= f.label :memory_per_process, 'Memory usage per process (optional)', class: "block text-sm font-medium leading-6 text-gray-900" %>
+
+            <%= f.radio_button :memory_per_process_units, 'mb', class: "h-4 w-4 border-gray-300 text-gray-900 focus:ring-sky-600 mt-1 ml-3", checked: @form.memory_per_process_units.blank? || @form.memory_per_process_units == 'mb' %>
+            <%= f.label :memory_per_process_units_mb, 'MB', class: 'text-sm leading-6 font-medium ml-2' %>
+
+            <%= f.radio_button :memory_per_process_units, 'gb', class: "h-4 w-4 border-gray-300 text-gray-900 focus:ring-sky-600 mt-1 ml-3" %>
+            <%= f.label :memory_per_process_units_gb, 'GB', class: 'text-sm leading-6 font-medium ml-2' %>
+          </div>
+
+          <div class="mt-2">
+            <%= f.number_field :memory_per_process, autocomplete: 'off', class: "block w-full sm:max-w-xs rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6" %>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <%= f.submit 'Submit', class: "rounded-md bg-sky-500 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600" %>
+        </div>
+
+      <% end %>
+    </div>
+
+    <% if @form.number_of_app_workers.present? %>
+      <div class="my-5 py-5">
+        <p class=' font-medium text-lg'>
+        You need <span class='text-sky-400'><%= number_with_delimiter @form.number_of_app_workers %> workers </span>in order to handle
+        <%= number_with_delimiter @form.average_request_per_sec.ceil %> requests per second.
+
+        <% if @form.one_hundred_utilization_requests.present? %>
+          At full capacity, you could handle <%= number_with_delimiter @form.one_hundred_utilization_requests.ceil  %> requests per second.
+        <% end %>
+        </p>
+
+        <% if @form.number_of_workers_per_cpu.present? %>
+          <p class='font-medium text-lg mt-2'>
+          You'll need <span class='text-sky-400'><%= number_with_delimiter @form.number_of_required_cpus %></span> CPUs
+
+          <% if @form.memory_per_process.present? %>
+            and <span class='text-sky-400'><%= number_with_precision @form.recommended_memory_per_process, strip_insignificant_zeros: true, precision: 2 %> <%= @form.memory_per_process_units.upcase %> </span>per worker.
+          <% end %>
+          </p>
+        <% end %>
+
+
+
+        <% if @form.average_request_per_sec > 600 %>
+          <p class='font-medium text-lg mt-2'>
+          But...with this amount of traffic, you'll need to use different techniques such as database replicas, CDN, or a NoSQL DB.
+          </p>
+        <% end %>
+      </div>
+    <% end %>
+
+    <% if @form.number_of_app_workers.present? %>
+    <div class='my-5 py-5'>
+      <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Monthly Cost</h2>
+
+       <div class="mt-8 flow-root">
+         <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+           <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+             <table class="min-w-full divide-y divide-gray-300">
+               <thead>
+                 <tr>
+                   <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0">Host</th>
+                   <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Type</th>
+                   <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">CPU</th>
+                   <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">RAM</th>
+                   <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Qty</th>
+                   <th scope="col" class="px-3 py-3.5 text-right text-sm font-semibold text-gray-900">Cost</th>
+                 </tr>
+               </thead>
+               <tbody class="divide-y divide-gray-200">
+                 <% @form.server_configs.each do |config| %>
+                   <tr>
+                     <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0"><%= config.provider %></td>
+                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><%= config.instance_type %></td>
+                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><%= config.cpu.to_i %></td>
+                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><%= config.ram < 1000 ? config.ram : (config.ram / 1000).to_i%> <%= config.ram < 1000 ? "MB" : "GB" %></td>
+                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><%= config.quantity.ceil %></td>
+                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 text-right"><%= humanized_money_with_symbol(config.price_per_month * config.quantity.ceil) %></td>
+                   </tr>
+
+                 <% end %>
+
+               </tbody>
+             </table>
+           </div>
+         </div>
+       </div>
+    </div>
+  <% end %>
+
+
+    <div class='my-5 py-5'>
+      <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
+
+      <dl class="mt-4 space-y-8 ">
+        <div class="pt-6 ">
+          <dt class="text-base font-semibold leading-7 text-gray-900">How do you calculate workers?</dt>
+          <dd class="mt-2 ">
+          <p class="text-base leading-7 text-gray-600">Using Litle's Law, the formula is as follows: <br/> <span class='text-sm font-mono'># of workers = avg response time in seconds x rps </span></p>
+          </dd>
+        </div>
+
+        <div class="pt-6">
+          <dt class="text-base font-semibold leading-7 text-gray-900">How accurate is this?</dt>
+          <dd class="mt-2 ">
+          <p class="text-base leading-7 text-gray-600">
+          This is just an estimation. The more variance there is in your average reponse time, the less predictable we can plan for capacity.
+          It also only applies to process-based ruby webservers like puma (clusters) and unicorn.
+          </p>
+          </dd>
+        </div>
+
+        <div class="pt-6">
+          <dt class="text-base font-semibold leading-7 text-gray-900">How are you recommending memory requirements?</dt>
+          <dd class="mt-2 ">
+          <p class="text-base leading-7 text-gray-600">I'm just adding a 20% buffer on top of the memory per process number.</p>
+          </dd>
+        </div>
+
+        <div class="pt-6">
+          <dt class="text-base font-semibold leading-7 text-gray-900">How do I figure out memory per process?</dt>
+          <dd class="mt-2 ">
+          <p class="text-base leading-7 text-gray-600"> You can use the <span class='font-mono'>ps</span> command after your rails app has been running for about 24 hours.</p>
+          </dd>
+        </div>
+
+        <div class="pt-6">
+          <dt class="text-base font-semibold leading-7 text-gray-900">Where can I learn more about Rails performance and scaling?</dt>
+          <dd class="mt-2 ">
+          <p class="text-base leading-7 text-gray-600">I recommend Nate Berkopec's
+          <a href="https://www.speedshop.co/blog/" target='_blank' class='underline underline-offset-2 hover:text-gray-500' >blog</a> and
+          <a href="https://www.railsspeed.com/" target='_blank' class='underline underline-offset-2 hover:gray-500'>book</a>.</p>
+          </dd>
+        </div>
+      </dl>
+
+    </div>
+  </div>
+</div>

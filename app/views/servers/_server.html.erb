@@ -1,0 +1,47 @@
+<div id="<%= dom_id server %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Provider:</strong>
+    <%= server.provider %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Instance type:</strong>
+    <%= server.instance_type %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Paas:</strong>
+    <%= server.paas %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Vps:</strong>
+    <%= server.vps %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Cpu:</strong>
+    <%= server.cpu %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Dedicated cpu:</strong>
+    <%= server.dedicated_cpu %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Ram:</strong>
+    <%= server.ram %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Price per month:</strong>
+    <%= server.price_per_month_cents %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this server", server, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this server', edit_server_path(server), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
